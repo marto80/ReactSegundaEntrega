@@ -1,8 +1,13 @@
 import React from 'react'
 
-const ItemDetail = () => {
+const ItemDetail = ({character}) => {
+  console.log(character);
   return (
-    <h1>Este es el detalle del producto</h1>
+    <div>
+      <h1>Detalle</h1>
+    <img src={character.image} width={250}/>
+    <h1>{character.name}</h1>
+    </div>
   )
 }
 

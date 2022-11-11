@@ -1,12 +1,15 @@
-import React from 'react'
-import Item from '../Item'
+import React from "react";
+import Item from "../Item";
+import './estilos.css'
 
-const ItemList = ({products}) => {
+const ItemList = ({ products }) => {
   return (
-    products.map(product => {
-        return <Item key={product.id} product={product}/>
-    })
-    )
-}
+    <div className="productos">
+      {products.map((product) => {
+        return <Item key={product.id} product={product} />;
+      })}
+    </div>
+  );
+};
 
-export default ItemList
+export default ItemList;
